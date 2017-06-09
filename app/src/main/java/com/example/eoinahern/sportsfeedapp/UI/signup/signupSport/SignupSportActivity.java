@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -11,6 +12,10 @@ import android.widget.RelativeLayout;
 import com.example.eoinahern.sportsfeedapp.MyApplication;
 import com.example.eoinahern.sportsfeedapp.R;
 import com.example.eoinahern.sportsfeedapp.UI.signup.signupTeams.SignupTeamsActivity;
+import com.example.eoinahern.sportsfeedapp.data.api.models.Sport;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.inject.Inject;
 
@@ -42,6 +47,23 @@ public class SignupSportActivity extends AppCompatActivity implements SignupSpor
 	}
 
 	private void setupRecycler() {
+
+
+		List<Sport> sportList  = new ArrayList<>();
+
+		sportList.add(Sport.create("football", false));
+		sportList.add(Sport.create("Basketball", false));
+		sportList.add(Sport.create("Hurling", false));
+		sportList.add(Sport.create("MMA", false));
+		sportList.add(Sport.create("Boxing", false));
+		sportList.add(Sport.create("NHL", false));
+		sportList.add(Sport.create("Curling", false));
+		sportList.add(Sport.create("Angling", false));
+
+		adapter.setList(sportList);
+
+		recycler.setLayoutManager(new LinearLayoutManager(this));
+		recycler.setAdapter(adapter);
 	}
 
 	@OnClick(R.id.next)

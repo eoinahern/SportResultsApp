@@ -12,7 +12,7 @@ public abstract class Sport implements Parcelable {
 
 	public abstract boolean active();
 
-	public static AutoValue_Sport create(String name, boolean active) {
+	public static Sport create(String name, boolean active) {
 		return new AutoValue_Sport(name, active);
 	}
 

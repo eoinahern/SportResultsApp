@@ -14,6 +14,7 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:textSize="22sp"
+		android:id="@+id/name"
 		android:layout_toRightOf="@id/checkbox"
 		android:text="football"
 		android:textColor="@color/light_grey"
