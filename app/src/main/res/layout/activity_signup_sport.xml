@@ -6,18 +6,39 @@
 	android:layout_height="match_parent"
 	tools:context="com.example.eoinahern.sportsfeedapp.UI.signup.signupSport.SignupSportActivity">
 
-	<android.support.v7.widget.Toolbar
+	<!--<android.support.v7.widget.Toolbar
 		android:layout_width="match_parent"
 		android:layout_height="?actionBarSize"
 		android:background="@color/light_green"
-		android:id="@+id/toolbar"/>
+		android:id="@+id/toolbar"/>-->
 
 	<android.support.v7.widget.RecyclerView
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:id="@+id/recycler"
-		android:layout_below="@id/toolbar"
+		android:layout_marginBottom="80dp"
 		/>
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:id="@+id/next"
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="16dp"
+		android:layout_marginBottom="16dp"
+		android:background="@drawable/bg_round_blue"
+		android:layout_alignParentBottom="true">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Proceed!"
+			android:textSize="22sp"
+			android:textColor="@color/white"
+			android:layout_centerInParent="true"/>
+
+	</RelativeLayout>
 
 
 </RelativeLayout>

@@ -21,7 +21,6 @@ public interface SignupSportActivityComponent extends BaseActivityComponent<Sign
 			super(activity);
 		}
 
-
 		@PerScreen
 		@Provides
 		public SignupAdapter getAdapter() {

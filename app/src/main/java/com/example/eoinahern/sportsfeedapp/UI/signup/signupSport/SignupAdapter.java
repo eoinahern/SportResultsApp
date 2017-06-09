@@ -11,7 +11,6 @@ import java.util.List;
 
 public class SignupAdapter extends RecyclerView.Adapter<SignupAdapter.ViewHolder> {
 
-
 	private List<Sport> sportList;
 
 	public SignupAdapter() {
@@ -41,6 +40,10 @@ public class SignupAdapter extends RecyclerView.Adapter<SignupAdapter.ViewHolder
 
 		sportList.addAll(sportList);
 		notifyDataSetChanged();
+	}
+
+	public List<Sport> getList() {
+		return sportList;
 	}
 
 	public class ViewHolder extends RecyclerView.ViewHolder {

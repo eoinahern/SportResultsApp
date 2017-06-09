@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+	<CheckBox
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/checkbox"
+		android:layout_margin="24dp"/>
+
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="22sp"
+		android:layout_toRightOf="@id/checkbox"
+		android:text="football"
+		android:textColor="@color/light_grey"
+		android:layout_centerVertical="true"/>
+
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_below="@id/checkbox"
+		android:background="@color/light_grey"/>
+
+
+</RelativeLayout>

@@ -54,8 +54,6 @@ public class LauncherActivity extends AppCompatActivity implements LauncherActiv
 				presenter.goToNextScreen();
 			}
 		}, 2000);
-
-		finish();
 	}
 
 
